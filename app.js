@@ -83,13 +83,13 @@ class Calculator{
             return integerDisplay
         }}
         
-        updateDisplay(){
-            this.currentOperandTextElement.innerText = this.currentOperand 
+   updateDisplay(){
+            this.currentOperandTextElement.innerText =
                 this.getDisplayNumber(this.currentOperand)
             if(this.operation !=null){
-                this.previousOperandTextElement.innerText = this.previousOperand  
+                this.previousOperandTextElement.innerText =
                     `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
-            } else {
+            }   else{
                 this.previousOperandTextElement.innerText = ""
             }   
         }
